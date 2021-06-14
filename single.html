@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src = "app.js"></script>
+        <link rel = "stylesheet" href="app.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="single.html">Tax Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+        </header>
+
+        <main>
+            <img src = "tax_time.jpg" class = "tax">
+                <label for="gIncome">Enter your gross income</label>
+                <input type="text" id= "gIncome" name="gIncome" value = ""><br><br>
+
+            
+                <label for="fname">Enter your first name</label>
+                <input type="text" id="fname" name="fname" value = ""><br><br>
+
+                <label for="fname">Enter your last name</label>
+                <input type="text" id="lname" name="name" value = ""><br><br>
+
+                <div class="dropdown theme-dropdown clearfix">
+                    <a id="dropdownMenu1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Choose a deduction status <span class="caret"></span></a>	
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="active">
+                        <label for = "deduction" name = "deduction">I want the deduction</label>
+                        <input type = "checkbox" id = "deduction"></li>
+                    <li><label for = "noDeduction" name = "noDeduction">I dont want the deduction</label>
+                        <input type = "checkbox" id = "noDeduct">
+                    </li>
+                  </ul>
+                </div><br><br><br>
+
+                <label for="pin">Enter a 4 digit pin number</label>
+                <input type="text" id="pin" name="pin"><br><br>
+
+                <button onclick="getTaxes()" id ="show">Click to submit info</button>
+                <button onclick = "resetForm()" id = "reset"> Click to reset form</button>
+            
+            
+                    <br><label for = "fullName">Your name:<span id = "fullName" class = "txt"></span></label><br>
+                  
+
+                    <label for = "userPin">Your pin:<span id ="userPin" class = "txt"></span></label><br>
+                    
+
+                    <label for = "grossI">Gross Income:<span id = "grossI" class = "txt"></span></label><br>
+                   
+
+                    <label for = "taxDue">Your taxes due are:<span id = "taxDue" class = "txt"></span></label><br>
+                
+        </main>
+        
+        <footer>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src = "app.js"></script>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="single.html">Tax Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+        </footer>
+    </body>
+</html>
